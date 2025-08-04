@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Outlook Hover Disabler",
+  "version": "1.0",
+  "description": "Disables disruptive hover tooltips on Outlook.com",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://outlook.live.com/*", "*://outlook.office.com/*", "*://outlook.office365.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "host_permissions": [
+    "*://outlook.live.com/*",
+    "*://outlook.office.com/*", 
+    "*://outlook.office365.com/*"
+  ]
+}
