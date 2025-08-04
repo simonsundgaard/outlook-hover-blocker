@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlook Hover Card Blocker - Chrome Extension</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            line-height: 1.6; 
+            max-width: 900px; 
+            margin: 40px auto; 
+            padding: 20px; 
+            color: #333; 
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { 
+            color: #2c3e50; 
+            text-align: center; 
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .hero {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .description {
+            font-size: 1.1em;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .feature {
+            background-color: #e8f6f3;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+        }
+        .feature h3 {
+            color: #27ae60;
+            margin-top: 0;
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+        }
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Outlook Hover Card Blocker</h1>
+        <p class="subtitle">A cleaner, distraction-free Outlook.com experience</p>
+        
+        <div class="hero">
+            <img src="outlook-hover-blocker.png" alt="Outlook Hover Card Blocker Extension Screenshot">
+        </div>
+        
+        <div class="description">
+            <p>Fed up with Outlook.com's intrusive hover cards that pop up every time you accidentally hover over a contact's name or picture? This extension eliminates those disruptive contact cards, giving you a cleaner, distraction-free email experience.</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>✅ Blocks Contact Cards</h3>
+                <p>Completely eliminates contact hover cards in Outlook.com for uninterrupted email reading.</p>
+            </div>
+            <div class="feature">
+                <h3>✅ Universal Compatibility</h3>
+                <p>Works with Outlook.live.com, Outlook.office.com, and Office 365 seamlessly.</p>
+            </div>
+            <div class="feature">
+                <h3>✅ Lightweight & Fast</h3>
+                <p>No performance impact on your browser - runs efficiently in the background.</p>
+            </div>
+            <div class="feature">
+                <h3>✅ Zero Configuration</h3>
+                <p>No setup required - works automatically after installation.</p>
+            </div>
+        </div>
+        
+        <div class="cta">
+            <p><strong>Simply install and enjoy a cleaner Outlook experience without those annoying popup cards interrupting your workflow.</strong></p>
+            <a href="#" class="cta-button">Install from Chrome Web Store</a>
+        </div>
+        
+        <div class="footer">
+            <p><a href="privacy.html">Privacy Policy</a> | Open Source | No Data Collection</p>
+            <p><small>This extension respects your privacy and collects no data whatsoever.</small></p>
+        </div>
+    </div>
+</body>
+</html>
