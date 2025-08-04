@@ -3,95 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Outlook Hover Card Blocker</title>
+    <title>Outlook Hover Card Blocker - Chrome Extension</title>
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
             line-height: 1.6; 
-            max-width: 800px; 
+            max-width: 900px; 
             margin: 40px auto; 
             padding: 20px; 
             color: #333; 
+            background-color: #f8f9fa;
         }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #34495e; margin-top: 30px; }
-        .highlight { background-color: #e8f6f3; padding: 15px; border-left: 4px solid #27ae60; margin: 20px 0; }
-        .contact { background-color: #f8f9fa; padding: 15px; border-radius: 5px; margin-top: 30px; }
-        .last-updated { color: #7f8c8d; font-style: italic; }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { 
+            color: #2c3e50; 
+            text-align: center; 
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .hero {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .description {
+            font-size: 1.1em;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .feature {
+            background-color: #e8f6f3;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+        }
+        .feature h3 {
+            color: #27ae60;
+            margin-top: 0;
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+        }
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <h2>Outlook Hover Card Blocker Chrome Extension</h2>
-    
-    <p class="last-updated">Last updated: August 4, 2025</p>
-    
-    <div class="highlight">
-        <strong>TL;DR:</strong> This extension doesn't collect, store, transmit, or access any of your personal data. It simply hides hover cards on Outlook.com using CSS and local browser functionality.
+    <div class="container">
+        <h1>Outlook Hover Card Blocker</h1>
+        <p class="subtitle">A cleaner, distraction-free Outlook.com experience</p>
+        
+        <div class="hero">
+            <img src="outlook-hover-blocker.png" alt="Outlook Hover Card Blocker Extension Screenshot">
+        </div>
+        
+        <div class="description">
+            <p>Fed up with Outlook.com's intrusive hover cards that pop up every time you accidentally hover over a contact's name or picture? This extension eliminates those disruptive contact cards, giving you a cleaner, distraction-free email experience.</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>✅ Blocks Contact Cards</h3>
+                <p>Completely eliminates contact hover cards in Outlook.com for uninterrupted email reading.</p>
+            </div>
+            <div class="feature">
+                <h3>✅ Universal Compatibility</h3>
+                <p>Works with Outlook.live.com, Outlook.office.com, and Office 365 seamlessly.</p>
+            </div>
+            <div class="feature">
+                <h3>✅ Lightweight & Fast</h3>
+                <p>No performance impact on your browser - runs efficiently in the background.</p>
+            </div>
+            <div class="feature">
+                <h3>✅ Zero Configuration</h3>
+                <p>No setup required - works automatically after installation.</p>
+            </div>
+        </div>
+        
+        <div class="cta">
+            <p><strong>Simply install and enjoy a cleaner Outlook experience without those annoying popup cards interrupting your workflow.</strong></p>
+            <a href="#" class="cta-button">Install from Chrome Web Store</a>
+        </div>
+        
+        <div class="footer">
+            <p><a href="privacy.html">Privacy Policy</a> | Open Source | No Data Collection</p>
+            <p><small>This extension respects your privacy and collects no data whatsoever.</small></p>
+        </div>
     </div>
-    
-    <h2>What This Extension Does</h2>
-    <p>The Outlook Hover Card Blocker extension enhances your Outlook.com experience by:</p>
-    <ul>
-        <li>Adding CSS styles to hide contact hover cards</li>
-        <li>Removing title attributes from contact elements to prevent tooltips</li>
-        <li>Monitoring the page for new elements to apply the same hiding functionality</li>
-        <li>...thats all it does, no external connections, no nothing</li>
-    </ul>
-    
-    <h2>Data Collection and Privacy</h2>
-    <p><strong>We collect absolutely no data.</strong> This extension:</p>
-    <ul>
-        <li>✅ Does NOT collect any personal information</li>
-        <li>✅ Does NOT track your browsing activity</li>
-        <li>✅ Does NOT access your emails, contacts, or calendar</li>
-        <li>✅ Does NOT send any data to external servers</li>
-        <li>✅ Does NOT use cookies or local storage</li>
-        <li>✅ Does NOT require user accounts or authentication</li>
-    </ul>
-    
-    <h2>How It Works</h2>
-    <p>The extension operates entirely within your browser and only affects the visual presentation of Outlook.com pages. It:</p>
-    <ul>
-        <li>Injects CSS styles to hide specific hover card elements</li>
-        <li>Modifies HTML attributes locally in your browser</li>
-        <li>Uses browser APIs only to detect when new page elements are added</li>
-    </ul>
-    <p><strong>All processing happens locally on your device.</strong> No information ever leaves your browser.</p>
-    
-    <h2>Permissions Explained</h2>
-    <p>The extension requests these minimal permissions:</p>
-    <ul>
-        <li><strong>"activeTab":</strong> Allows the extension to work on the current Outlook.com tab you're viewing</li>
-        <li><strong>Host permissions for Outlook domains:</strong> Allows the extension to run only on Outlook.com, outlook.office.com, and outlook.office365.com</li>
-    </ul>
-    <p>These permissions are the minimum required for the extension to function and do not grant access to your personal data.</p>
-    
-    <h2>Third-Party Services</h2>
-    <p>This extension does not integrate with, connect to, or communicate with any third-party services, analytics platforms, or external servers.</p>
-    
-    <h2>Data Security</h2>
-    <p>Since no data is collected, stored, or transmitted, there are no data security concerns. The extension operates entirely within Chrome's secure extension environment.</p>
-    
-    <h2>Children's Privacy</h2>
-    <p>This extension does not collect any information from anyone, including children under 13.</p>
-    
-    <h2>Changes to This Policy</h2>
-    <p>If we ever update this privacy policy, we will post the new policy on this page and update the "last updated" date. However, given the nature of this extension (no data collection), significant changes are unlikely.</p>
-    
-    <h2>Open Source</h2>
-    <p>This extension is open source. You can review the complete source code to verify these privacy claims.</p>
-    
-    <div class="contact">
-        <h2>Contact</h2>
-        <p>If you have any questions about this privacy policy or the extension, you can contact us through:</p>
-        <ul>
-            <li>Chrome Web Store reviews and support</li>
-            <li>GitHub issues (if you have the repository link)</li>
-        </ul>
-    </div>
-    
-    <hr>
-    <p><small>This privacy policy is designed to be transparent and user-friendly. The extension truly does not collect any data - this policy exists solely to meet Chrome Web Store requirements.</small></p>
 </body>
 </html>
